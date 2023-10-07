@@ -23,12 +23,15 @@ _This is an MVC web application for Eau Claire's Salon that helps to manage styl
 * _Open your shell (e.g., Terminal or GitBash) and navigate to this project's directory called "HairSalon.Solution"._
 * _Create a file named `appsettings.json`: `$ touch appsettings.json`_
 * _Within `appsettings.json` add the following code, replacing the `uid` and `pwd` values with your own username and password for MySQL._
-```json
+
+    ```json
     {
       "ConnectionStrings": {
           "DefaultConnection": "Server=localhost;Port=3306;database=ryans_todo_from_section3;uid=[YOUR-USERNAME];pwd=[YOUR-MYSQL-PASSWORD];"
       }
-    }```
+    }
+    ```
+
 * _Set up the Database. Follow the instructions in the LearnHowToProgram.com lesson ["Creating a Test Database: Exporting and Importing Databases with MySQL Workbench"](https://www.learnhowtoprogram.com/c-and-net/database-basics/creating-a-test-database-exporting-and-importing-databases-with-mysql-workbench) to use the `mac_granger.sql` file located at the top level of this repo to create a new database in MySQL Workbench with the name `mac_granger`.
 * _Navigate to the project directory: `$ cd HairSalon`_
 * _Run `$ dotnet watch run` in the command line to start the project in development mode with a watcher._
