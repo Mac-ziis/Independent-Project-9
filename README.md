@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Eau Claire's Salon_
 
-#### By _**{List of contributors}**_
+#### By _**Mac Granger**_
 
-#### _{Brief description of application}_
+#### _This is an MVC web application for Eau Claire's Salon that helps to manage stylists and their clients._
 
 ## Technologies Used
 
@@ -14,22 +14,31 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This is an MVC web application for Eau Claire's Salon that helps to manage stylists and their clients. You will need to add a new stylist before you can add their clients, each client will pertain to one stylist. To add a client, select the stylist from the dropdown menu, add the description of the client, and then select "Add Client". This application will help Eau Claire keep track of her stylists and all of their clients. You can add, delete, and alter stylists and their clients._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+-- Note: An installation of the .NET SDK is required in order to run this application locally. [See Here](https://dotnet.microsoft.com/en-us/) for installation.
+* _Clone this repo._
+* _Open your shell (e.g., Terminal or GitBash) and navigate to this project's directory called "HairSalon.Solution"._
+* _Create a file named `appsettings.json`: `$ touch appsettings.json`_
+* _Within `appsettings.json` add the following code, replacing the `uid` and `pwd` values with your own username and password for MySQL._
+```json
+    {
+      "ConnectionStrings": {
+          "DefaultConnection": "Server=localhost;Port=3306;database=ryans_todo_from_section3;uid=[YOUR-USERNAME];pwd=[YOUR-MYSQL-PASSWORD];"
+      }
+    }```
+* _Set up the Database. Follow the instructions in the LearnHowToProgram.com lesson ["Creating a Test Database: Exporting and Importing Databases with MySQL Workbench"](https://www.learnhowtoprogram.com/c-and-net/database-basics/creating-a-test-database-exporting-and-importing-databases-with-mysql-workbench) to use the `mac_granger.sql` file located at the top level of this repo to create a new database in MySQL Workbench with the name `mac_granger`.
+* _Navigate to the project directory: `$ cd HairSalon`_
+* _Run `$ dotnet watch run` in the command line to start the project in development mode with a watcher._
+* _Open the browser at: _https://localhost:5001_. If you cannot access localhost:5001 it is likely because you have not configured a .NET developer security certificate for HTTPS. To learn about this, review this lesson: [Redirecting to HTTPS and Issuing a Security Certificate](https://www.learnhowtoprogram.com/c-and-net/basic-web-applications/redirecting-to-https-and-issuing-a-security-certificate).
+_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known bugs._
 
 ## License
 
